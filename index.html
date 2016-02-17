@@ -20,35 +20,74 @@ a { color: inherit; }
 
 </style>
 
-<div class="topFrame">
-	<h1 class="topFrame__brand">
-		<i class="fa fa-chevron-right"></i>
-		<strong>OneFirm</strong>
-	</h1>
-	<a href="#search" class="topFrame__icon">
-		<i class="fa fa-search"></i></a>
-	<a href="#menu" class="topFrame__icon">
-		<i class="fa fa-ellipsis-v"></i></a>
+<header>
+
+	<div class="topFrame">
+		<h1 class="topFrame__brand">
+			<img src="ressources/img/brand.png" title="OneFirm Logo">
+			<!--
+				<i class="fa fa-chevron-right"></i>
+				<strong>OneFirm</strong>
+			-->
+		</h1>
+		<a href="#search" class="topFrame__icon">
+			<i class="fa fa-search"></i>
+		</a>
+		<a href="#menu" class="topFrame__icon">
+			<i class="fa fa-ellipsis-v"></i>
+		</a>
+	</div>
+	
+	<nav class="tabFrame">
+	
+		<a class="tabFrame__button active" data-target-tab="news">
+			<i class="tabFrame__button__icon fa fa-home"></i>
+		</a>
+		
+		<a class="tabFrame__button" data-target-tab="topics">
+			<i class="tabFrame__button__icon fa fa-hashtag"></i>
+		</a>
+		
+		<a class="tabFrame__button" data-target-tab="cloud">
+			<i class="tabFrame__button__icon fa fa-cloud"></i>
+		</a>
+	
+	</nav>
+
+</header>
+
+<div class="mainContent">
+
+	<article class="card">
+		<img class="card__illustration" src="ressources/img/big_logo.png">
+		<div class="card__block">
+			<h2 class="card__title">Solucom et Kurt Salmon Fusionnent !</h4>
+			<p class="card__description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<p class="card__tags">
+				<span class="card__tag">Actu Cabinet</span>
+				<span class="card__tag">OneFirm</span>
+			</p>
+		</div>
+	</article>
+
+	<article class="card">
+		<img class="card__illustration" src="ressources/img/big_logo.png">
+		<div class="card__block">
+			<h2 class="card__title">Solucom et Kurt Salmon Fusionnent !</h4>
+			<p class="card__description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		</div>
+	</article>
+
+	<article class="card">
+		<img class="card__illustration" src="ressources/img/big_logo.png">
+		<div class="card__block">
+			<h2 class="card__title">Solucom et Kurt Salmon Fusionnent !</h4>
+			<p class="card__description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		</div>
+	</article>
+
 </div>
 
-<div class="tabFrame">
-
-	<a class="tabFrame__button active" data-target-tab="news">
-		<i class="tabFrame__button__icon fa fa-newspaper-o"></i>
-		<span class="tabFrame__button__label" for="tabButton_news">Actualités</span>
-	</a>
-	
-	<a class="tabFrame__button" data-target-tab="ideas">
-		<i class="tabFrame__button__icon fa fa-lightbulb-o"></i>
-		<span class="tabFrame__button__label" for="tabButton_ideas">Idées</span>
-	</a>
-	
-	<a class="tabFrame__button" data-target-tab="account">
-		<i class="tabFrame__button__icon fa fa-user"></i>
-		<span class="tabFrame__button__label" for="tabButton_account">Mon Compte</span>
-	</a>
-
-</div>
 
 </body>
 
@@ -90,7 +129,7 @@ $( document ).ready(function() {
 
 <link
 	name='Reset CSS'
-	href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+	href="ressources/third-party/reset-2.0.css"
 	rel="stylesheet"
 	type='text/css'
 	>
