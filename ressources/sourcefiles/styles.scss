@@ -107,9 +107,11 @@ h2 { font-size: 1.6em; text-transform: uppercase; }
 
 }
 
-.mainContent {
-	overflow-y: scroll;
+.tabContent {
+	min-height: 50vh;
 }
+
+#compass h2:before { content: "# "; }
 
 .card {
 	@include light_shadow;

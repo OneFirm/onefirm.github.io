@@ -23,7 +23,7 @@ gulp.task('clean', function() {
 
 gulp.task('styles', function() {
 	return sass('ressources/sourcefiles/*.scss', { style: 'expanded' })
-		.pipe(debug({title: 'unicorn:'}))
+//		.pipe(debug({title: 'unicorn:'}))
 		.pipe(autoprefixer('last 2 version'))
 		.pipe(gulp.dest('ressources/rawfiles/'))
 		.pipe(rename({suffix: '.min'}))
@@ -50,7 +50,7 @@ gulp.task('watch', function() {
 	gulp.watch('ressources/sourcefiles/*.scss', ['styles']);
 
 	// Watch .js files
-//	gulp.watch('src/scripts/**/*.js', ['scripts']);
+	gulp.watch('ressources/sourcefiles/*.js', ['scripts']);
 
 	// Watch image files
 //	gulp.watch('src/images/**/*', ['images']);

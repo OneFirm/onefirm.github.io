@@ -40,16 +40,16 @@ a { color: inherit; }
 	
 	<nav class="tabFrame">
 	
-		<a class="tabFrame__button active" data-target-tab="news">
+		<a class="tabFrame__button active" data-target-tab="home">
 			<i class="tabFrame__button__icon fa fa-home"></i>
 		</a>
 		
-		<a class="tabFrame__button" data-target-tab="topics">
+		<a class="tabFrame__button" data-target-tab="compass">
 			<i class="tabFrame__button__icon fa fa-compass"></i>
 		</a>
 		
-		<a class="tabFrame__button" data-target-tab="cloud">
-			<i class="tabFrame__button__icon fa fa-cloud"></i>
+		<a class="tabFrame__button" data-target-tab="trending">
+			<i class="tabFrame__button__icon fa fa-hashtag"></i>
 		</a>
 	
 	</nav>
@@ -58,10 +58,18 @@ a { color: inherit; }
 
 <div class="mainContent">
 
-	<div id="home">
+	<div id="home" class="tabContent">
 	
 		<article class="card">
-			<img class="card__illustration" src="ressources/img/2.jpg">
+			<img class="card__illustration" src="ressources/img/4.jpg">
+			<div class="card__block">
+				<h2 class="card__title">Présentation de la stratégie 2020</h4>
+				<p class="card__description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			</div>
+		</article>
+
+		<article class="card">
+			<img class="card__illustration" src="ressources/img/big_logo.png">
 			<div class="card__block">
 				<h2 class="card__title">Solucom et Kurt Salmon Fusionnent !</h2>
 				<p class="card__description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -69,14 +77,6 @@ a { color: inherit; }
 					<span class="card__tag">Actu Cabinet</span>
 					<span class="card__tag">OneFirm</span>
 				</p>
-			</div>
-		</article>
-	
-		<article class="card">
-			<img class="card__illustration" src="ressources/img/4.jpg">
-			<div class="card__block">
-				<h2 class="card__title">Solucom et Kurt Salmon Fusionnent !</h4>
-				<p class="card__description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 			</div>
 		</article>
 	
@@ -98,17 +98,34 @@ a { color: inherit; }
 	
 	</div>
 
-	<div id="compass">
+	<div id="compass" class="tabContent" hidden>
 
 		<article class="card">
+			<img class="card__illustration" src="ressources/img/3.jpg">
 			<div class="card__block">
-				<h2 class="card__title">Evènements</h2>
+				<h2 class="card__title">Ressources Humaines</h2>
+				<p class="card__description">La politique RH au sein de Solucom et Kurt Salmon.</p>
+				<p class="card__tags">
+					<span class="card__tag">Parcours</span>
+					<span class="card__tag">Mobilité</span>
+					<span class="card__tag">Formation</span>
+					<span class="card__tag">Rémunération</span>
+				</p>
+
+			</div>
+		</article>
+	
+		<article class="card">
+			<img class="card__illustration" src="ressources/img/big_logo.png">
+			<div class="card__block">
+				<h2 class="card__title">Projet OneFirm</h2>
+				<p class="card__description">Solucom et Kurt Salmon fusionnent !</p>
 			</div>
 		</article>
 
 	</div>
 
-	<div id="cloud">
+	<div id="trending" class="tabContent" hidden>
 
 	</div>
 

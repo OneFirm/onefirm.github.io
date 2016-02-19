@@ -95,8 +95,12 @@ h2 {
   cursor: pointer;
 }
 
-.mainContent {
-  overflow-y: scroll;
+.tabContent {
+  min-height: 50vh;
+}
+
+#compass h2:before {
+  content: "# ";
 }
 
 .card {
