@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Reactive OneFirm</title>
+
+</head>
+
+<body>
+
+<div id="content"></div>
+
+</body>
+
+
+<script src="ressources/third-party/react-0.14.7.min.js"></script>
+<script src="ressources/third-party/react-dom-0.14.7.min.js"></script>
+<script src="ressources/third-party/babel-core.5.8.23.browser.min.js"></script>
+<script src="ressources/third-party/jquery-2.2.0.min.js"></script>
+<script src="ressources/third-party/marked-0.3.5.min.js"></script>
+
+<script type="text/babel">
+
+var CommentBox = React.createClass({
+	render: function() {
+		return (
+			<div className="commentBox">
+				Hello, world! I am a CommentBox.
+			</div>
+		);
+	}
+});
+
+ReactDOM.render(
+	<CommentBox url="potato.json" />,
+	document.getElementById('content')
+);
+
+</script>
+
+
+</html>
